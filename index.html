@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Sem Barreiras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section text-center">
+            <div class="hero-image-container">
+                <img src="pexels-steve-1621793.jpg"
+                     alt="Galeria inspiradora mostrando artistas com deficiências criando arte bela em um estúdio inclusivo" 
+                     class="hero-image">
+                <div class="hero-overlay">
+                     <div class="navbar">
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                        <li><a href="pagina2.html">Quem somos?</a></li>
+                </ul>
+            </div> 
+                    <h1 class="hero-title">Arte que inspira </h1>
+                </div>
+            </div>
+            
+            <!-- Disability Type Filters -->
+            <h2 class="filter-title">Filtre por Tipo de Deficiência</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-disability="all">
+                    <span class="filter-icon">🌍</span>
+                    <span class="filter-text">Todos</span>
+                </button>
+                <button class="filter-btn" data-disability="visual">
+                    <span class="filter-icon">👁️</span>
+                    <span class="filter-text">Visual</span>
+                </button>
+                <button class="filter-btn" data-disability="mobility">
+                    <span class="filter-icon">♿</span>
+                    <span class="filter-text">Mobilidade</span>
+                </button>
+                <button class="filter-btn" data-disability="hearing">
+                    <span class="filter-icon">👂</span>
+                    <span class="filter-text">Auditiva</span>
+                </button>
+                <button class="filter-btn" data-disability="cognitive">
+                    <span class="filter-icon">🧠</span>
+                    <span class="filter-text">Cognitiva</span>
+                </button>
+            </div>
+        </div>
+
+        <h2 class="artworks-title">Obras dos Artistas</h2>
+        
+        <div class="art-grid">
+            <!-- Artist 1 -->
+            <div class="art-card" data-disability="visual">
+                <div class="art-image-container">
+                    <img src="images.jpg"
+                         alt="Obra 'Abstração Tátil' criada por Carlos Silva, artista com deficiência visual" 
+                         class="art-image">
+                </div>
+                <div class="art-details">
+                    <h3 class="artwork-name">Happiness</h3>
+                    <p class="art-technique">óleo sobre tela</p>
+                    <div class="artist-info">
+                        <span class="artist-name">Lisa Fittipaldi</span>
+                        <span class="disability-badge">Visual</span>
+                    </div>
+                    <p class="art-description">Obra criada através da percepção sensorial do toque</p>
+                </div>
+            </div>
+
+            <!-- Artist 2 -->
+            <div class="art-card" data-disability="mobility">
+                <div class="art-image-container">
+                    <img src="sergio torreta.jpg"
+                         alt="Obra 'Dança das Cores' criada por Ana Oliveira, artista com deficiência de mobilidade" 
+                         class="art-image">
+                </div>
+                <div class="art-details">
+                    <h3 class="artwork-name">Ipê</h3>
+                    <p class="art-technique">Pintura com boca</p>
+                    <div class="artist-info">
+                        <span class="artist-name">Sérgio Torreta</span>
+                        <span class="disability-badge">Mobilidade</span>
+                    </div>
+                    <p class="art-description">Pintura expressiva utilizando técnicas adaptadas</p>
+                </div>
+            </div>
+
+            <!-- Artist 3 -->
+            <div class="art-card" data-disability="hearing">
+                <div class="art-image-container">
+                    <img src="pontinha.jpg"
+                         alt="Obra 'Silêncio Vibrante' criada por Pedro Santos, artista com deficiência auditiva" 
+                         class="art-image">
+                </div>
+                <div class="art-details">
+                    <h3 class="artwork-name">Pontinha</h3>
+                    <p class="art-technique">Óleo sobre tela</p>
+                    <div class="artist-info">
+                        <span class="artist-name">Adriano Nardim</span>
+                        <span class="disability-badge">Auditiva</span>
+                    </div>
+                    <p class="art-description">Representação visual da experiência surda</p>
+                </div>
+            </div>
+
+            <!-- Artist 4 -->
+            <div class="art-card" data-disability="cognitive">
+                <div class="art-image-container">
+                    <img src="judith scott.jpeg"
+                         alt="Obra 'Mundo Particular' criada por Maria Costa, artista com deficiência cognitiva" 
+                         class="art-image">
+                </div>
+                <div class="art-details">
+                    <h3 class="artwork-name">Mundo Particular</h3>
+                    <p class="art-technique">escultura</p>
+                    <div class="artist-info">
+                        <span class="artist-name">Judith Scott</span>
+                        <span class="disability-badge">Cognitiva</span>
+                    </div>
+                    <p class="art-description">Expressão única de percepção e emoção</p>
+                </div>
+            </div>
+
+            <!-- Artist 5 -->
+            <div class="art-card" data-disability="visual">
+                <div class="art-image-container">
+                    <img src=jemisson.jpg
+                         alt="Obra 'Luz na Escuridão' criada por João Pereira, artista com deficiência visual" 
+                         class="art-image">
+                </div>
+                <div class="art-details">
+                    <h3 class="artwork-name">Um lugar de paz</h3>
+                    <p class="art-technique">óleo sobre tela</p>
+                    <div class="artist-info">
+                        <span class="artist-name">Jemisson César</span>
+                        <span class="disability-badge">Visual</span>
+                    </div>
+                    <p class="art-description">Capturando o mundo através de outros sentidos</p>
+                </div>
+            </div>
+
+            <!-- Artist 6 -->
+            <div class="art-card" data-disability="mobility">
+                <div class="art-image-container">
+                    <img src= arara.jpg
+                         alt="Obra 'Movimento Congelado' criada por Sofia Martins, artista com deficiência de mobilidade" 
+                         class="art-image">
+                </div>
+                <div class="art-details">
+                    <h3 class="artwork-name">Arara Amarela</h3>
+                    <p class="art-technique">pintura com o pé</p>
+                    <div class="artist-info">
+                        <span class="artist-name">Marcos dos Santos</span>
+                        <span class="disability-badge">Mobilidade</span>
+                    </div>
+                    <p class="art-description">uma arara Amarela pintada com técnicas adaptadas</p>
+                </div>
+            </div>
+
+            <!-- Artist 7-->
+            <div class="art-card" data-disability="cognitive">
+                <div class="art-image-container">
+                    <img src="garage.jpg"
+                         alt="Obra 'Movimento Congelado' criada por Sofia Martins, artista com deficiência de mobilidade" 
+                         class="art-image">
+                </div>
+                <div class="art-details">
+                    <h3 class="artwork-name">Garage in the snow(garagem na neve)</h3>
+                    <p class="art-technique">óleo sobre tela</p>
+                    <div class="artist-info">
+                        <span class="artist-name">Christy Brown</span>
+                        <span class="disability-badge">cognitiva</span>
+                    </div>
+                    <p class="art-description">retratando uma cena de neve com uma garagem</p>
+                </div>
+            </div>
+            <!-- Artist 8 -->
+            <div class="art-card" data-disability="hearing">
+                <div class="art-image-container">
+                    <img src=svetlana-zinovieva.png
+                         alt="Obra 'Movimento Congelado' criada por Sofia Martins, artista com deficiência de mobilidade" 
+                         class="art-image">
+                </div>
+                <div class="art-details">
+                    <h3 class="artwork-name">She is deaf(Ela é surda)</h3>
+                    <p class="art-technique">óleo sobre tela</p>
+                    <div class="artist-info">
+                        <span class="artist-name">Svetlana Zinovieva</span>
+                        <span class="disability-badge">Auditiva</span>
+                    </div>
+                    <p class="art-description">dificuldade de uma pessoa surda</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+        <div class="espaço"></div>
+
+                    <footer class="rodape" id="contato">
+                        <div class="rodape-div">
+                    
+                            <div class="rodape-div-1">
+                                <div class="rodape-div-1-coluna">
+                                    <span><strong>LOGO</strong></span>
+                                    <p>O caminho para a inclusão</p>
+                                </div>
+                            </div>
+                    
+                            <div class="rodape-div-2">
+                                <div class="rodape-div-2-coluna">
+                                    <span><strong>Contatos</strong></span>
+                                    <p>contato</p>
+                                    <p>+55 11 99999-9999</p>
+                                </div>
+                            </div>
+                    
+                            <div class="rodape-div-3">
+                                <div class="rodape-div-3-coluna">
+                                    <span><strong>Links</strong></span>
+                                    <p><a href="#servicos">Serviços</a></p>
+                                    <p><a href="#empresa">Empresa</a></p>
+                                    <p><a href="pagina2.html">Sobre</a></p>
+                                </div>
+                            </div>
+                    
+                            <div class="rodape-div-4">
+                                <div class="rodape-div-4-coluna">
+                                    <span><strong>Outros</strong></span>
+                                    <p>Políticas de Privacidade</p>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        <p class="rodape-direitos">Copyright © 2025 – Todos os Direitos Reservados.</p>
+                    </footer>
+</body>
+</html>

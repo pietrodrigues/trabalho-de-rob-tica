@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 1.5rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+
+/*navbar*/
+.navbar{
+ position: absolute;
+ top:0;
+ left:0;
+ padding: 10px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: absolute, top, left;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+li a:hover{
+    background: white;
+    transition: 0,5s;
+}
+
+.navbar a:hover{
+    color:black;
+}
+
+
+/* Seção Hero */
+.hero-section {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+/*texto*/
+
+.p1{
+    margin-left: 5px; 
+    font-size: 24px;
+}
+
+
+.rodape{
+    background-color: #bf8360;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.rodape {
+    margin-bottom: 5px;
+}
+
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+
+.rodape-direitos{
+    width: 100%;
+    background-color: #593527;
+    padding: 20px;
+    margin: 0px;
+    text-align: center;
+}
+
+/*espaço*/
+.espaço{
+    width: 199px;
+    height: 200px;
+}
