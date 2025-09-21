@@ -1,0 +1,309 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    background-color: white;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.container {
+    min-height: 100vh;
+    padding: 1.5rem;
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+/*navbar*/
+
+.navbar{
+ position: absolute;
+ top:0;
+ left:0;
+ padding: 10px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: absolute, top, left;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+li a:hover{
+    background: white;
+    transition: 0,5s;
+}
+
+.navbar a:hover{
+    color:black;
+}
+
+
+/* Seção Hero */
+.hero-section {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 24rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Seção de filtros */
+.filter-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #101011;
+    margin-bottom: 1.5rem;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.filter-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: #e2e8f0;
+    color: #4a6947;
+    font-size: 1,5rem;
+}
+
+.filter-btn:hover {
+    background-color: #a4b0be;
+    transform: scale(1.05);
+}
+
+.filter-btn.active {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.filter-icon {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.filter-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Título da seção de obras */
+.artworks-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #101011;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Grid das obras */
+.art-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .art-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .art-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .art-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Cartão de obra */
+.art-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.art-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem da obra */
+.art-image-container {
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.art-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.art-card:hover .art-image {
+    transform: scale(1.05);
+}
+
+/* Detalhes da obra */
+.art-details {
+    padding: 1rem;
+}
+
+.artwork-name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+}
+
+.art-technique {
+    font-size: 0.875rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+}
+
+.artist-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.artist-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #3b82f6;
+}
+
+.disability-badge {
+    font-size: 0.75rem;
+    background-color: #e0f2fe;
+    color: #0c4a6e;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-weight: 500;
+}
+
+.art-description {
+    font-size: 0.75rem;
+    color: #64748b;
+    line-height: 1.4;
+}
+
+/*rodape*/
+.rodape{
+    background-color: #bf8360;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.rodape {
+    margin-bottom: 5px;
+}
+
+.rodape-div{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4{
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+
+.rodape span{
+    font-size: 20px;
+    color: white;
+}
+
+.rodape-direitos{
+    width: 100%;
+    background-color: #593527;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+/*espaço*/
+.espaço{
+    width: 150px;
+    height: 158px;
+}
